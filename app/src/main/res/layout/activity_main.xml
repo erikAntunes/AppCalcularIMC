@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1080px"
+    android:layout_height="20160px"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,48 +12,74 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="30sp"
-        android:layout_marginTop="64dp"
-        android:text="Vamos Calcular seu IMC?" />
+        android:text="Vamos Calcular seu IMC?"
+        android:textColor="@color/colorAccent"/>
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="Digite seu peso"/>
+        android:layout_height="500px"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/peso_digitado_id"
-        android:layout_width="440dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="470px"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="45px"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Digite seu peso"
+            android:textColor="@color/colorPrimary" />
 
-     <TextView
+        <TextView
+            android:layout_width="470px"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="45px"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Digite sua altura"
+            android:textColor="@color/colorPrimary" />
+
+        ></LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="Digite sua altura"/>
+        android:layout_height="150px"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/altura_digitada_id"
-        android:layout_width="440dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/peso_digitado_id"
+            android:layout_width="470px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45px"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/altura_digitada_id"
+            android:layout_width="470px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45px"
+            android:inputType="numberDecimal" />
+
+        ></LinearLayout>
+
 
     <Button
-        android:layout_width="112dp"
+        android:layout_width="300px"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="@color/colorPrimary"
         android:onClick="botaoApertado"
-        android:text="Calcular" />
+        android:text="Calcular"
+        android:textColor="@color/colorAccent"
+        android:shadowColor="@color/colorAccent"
+        />
 
     <TextView
         android:id="@+id/text_resposta_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp" />
+        android:layout_margin="16px" />
 
 </LinearLayout>
