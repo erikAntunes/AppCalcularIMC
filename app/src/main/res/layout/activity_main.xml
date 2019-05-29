@@ -130,7 +130,7 @@
             android:layout_marginLeft="26px"
             android:background="@color/verde"
             android:gravity="center"
-            android:text="PESO NORMAL"
+            android:text="PESO IDEAL"
             android:textColor="@color/colorPrimaryDark" />
 
         <TextView
@@ -151,7 +151,7 @@
             android:layout_marginLeft="35px"
             android:background="@color/laranja"
             android:gravity="center"
-            android:text="OBSIDADE I"
+            android:text="OBESIDADE 1"
             android:textColor="@color/branco" />
 
 
@@ -162,7 +162,7 @@
             android:layout_marginLeft="35px"
             android:background="@color/vermelho"
             android:gravity="center"
-            android:text="OBSIDADE II"
+            android:text="OBESIDADE 2"
             android:textColor="@color/branco" />
 
 

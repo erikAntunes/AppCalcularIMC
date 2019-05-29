@@ -27,11 +27,37 @@ public class MainActivity extends AppCompatActivity {
 
         Float resultado = peso / (altura * altura);
 
+        String imc = "new imc";
+
+
+        if(resultado < 18.5){
+            imc = "VISH! você está ABAIXO DO PESO IDEAL";
+        }
+        if (resultado > 18.5 && resultado < 24.99){
+
+            imc = "PARABÉNS! você está no seu PESO IDEAL";
+        }
+        if (resultado > 25 && resultado < 29.99){
+
+            imc = "VISH! você está ACIMA DO PESO IDEAL";
+
+        }
+        if (resultado > 30 && resultado < 34.99){
+
+            imc = "CUIDADO! OBESIDADE NIVEL 1";
+
+        }
+
+        if (resultado > 35 && resultado < 39.99){
+
+            imc = "CUIDADO! OBESIDADE NIVEL 2";
+
+        }
 
 
         respostaTextView.setText("Seu IMC é: "+resultado);
 
-        Toast.makeText(this,"Calculado com Sucesso",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,imc,Toast.LENGTH_LONG).show();
 
     }
 }
