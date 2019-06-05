@@ -119,7 +119,7 @@
                  android:layout_width="62dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
-                 android:layout_marginLeft="6dp"
+                 android:layout_marginLeft="7dp"
                  android:background="@color/laranja"
                  android:gravity="center"
                  android:text="30 e 34,99"
@@ -130,7 +130,7 @@
                  android:layout_width="62dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
-                 android:layout_marginLeft="6dp"
+                 android:layout_marginLeft="7dp"
                  android:background="@color/vermelho"
                  android:gravity="center"
                  android:text="35 e 39,99"
@@ -148,7 +148,7 @@
              android:layout_marginTop="20px">
 
              <TextView
-                 android:layout_width="70dp"
+                 android:layout_width="50dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
                  android:layout_marginLeft="8dp"
@@ -158,10 +158,10 @@
                  android:textColor="@color/colorPrimaryDark" />
 
              <TextView
-                 android:layout_width="70dp"
+                 android:layout_width="61dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
-                 android:layout_marginLeft="6dp"
+                 android:layout_marginLeft="3dp"
                  android:background="@color/amarelo"
                  android:gravity="center"
                  android:text="ACIMA DO PESO"
@@ -169,10 +169,10 @@
 
 
              <TextView
-                 android:layout_width="70dp"
+                 android:layout_width="74dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
-                 android:layout_marginLeft="6dp"
+                 android:layout_marginLeft="3dp"
                  android:background="@color/laranja"
                  android:gravity="center"
                  android:text="OBESIDADE 1"
@@ -180,10 +180,10 @@
 
 
              <TextView
-                 android:layout_width="230px"
+                 android:layout_width="74dp"
                  android:layout_height="match_parent"
                  android:layout_gravity="left"
-                 android:layout_marginLeft="35px"
+                 android:layout_marginLeft="3dp"
                  android:background="@color/vermelho"
                  android:gravity="center"
                  android:text="OBESIDADE 2"
