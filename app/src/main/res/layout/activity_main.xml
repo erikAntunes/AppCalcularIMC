@@ -1,192 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="1080px"
-    android:layout_height="20160px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/splash">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:text="Vamos Calcular seu IMC?"
-        android:textColor="@color/colorPrimary"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/toca"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="22dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="400px"
+
+    <android.support.v7.widget.CardView
+        android:layout_width="285dp"
+        android:layout_height="485dp"
         android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/branco">
 
-        <TextView
-            android:layout_width="470px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="55px"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:text="Digite seu Peso em Quilogramas"
-            android:textColor="@color/branco" />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="470px"
-            android:layout_height="match_parent"
-            android:layout_gravity="right"
-            android:layout_marginLeft="35px"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:text="Digite sua Altura em
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="30sp"
+             android:text="Vamos Calcular seu IMC?"
+             android:textColor="@color/vermelho"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_gravity="center"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="130dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="8dp"
+                 android:background="@color/vermelho"
+                 android:gravity="center"
+                 android:text="Digite seu Peso em Quilogramas"
+                 android:textColor="@color/branco" />
+
+             <TextView
+                 android:layout_width="130dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="right"
+                 android:layout_marginLeft="8dp"
+                 android:background="@color/vermelho"
+                 android:gravity="center"
+                 android:text="Digite sua Altura em
             Metros"
-            android:textColor="@color/branco" />
+                 android:textColor="@color/branco" />
 
-        ></LinearLayout>
+             ></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="150px"
+             android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/peso_digitado_id"
-            android:layout_width="470px"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="45px"
-            android:inputType="number" />
+             <EditText
+                 android:id="@+id/peso_digitado_id"
+                 android:layout_width="130dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="8dp"
+                 android:inputType="number" />
 
-        <EditText
-            android:id="@+id/altura_digitada_id"
-            android:layout_width="470px"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="45px"
-            android:inputType="numberDecimal" />
+             <EditText
+                 android:id="@+id/altura_digitada_id"
+                 android:layout_width="130dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="8dp"
+                 android:inputType="numberDecimal" />
 
-        ></LinearLayout>
+             ></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="100px"
+             android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="26px"
-            android:background="@color/verde"
-            android:gravity="center"
-            android:text="18,5 e 24,99"
-            android:textColor="@color/colorPrimaryDark" />
+             <TextView
+                 android:layout_width="62dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="8dp"
+                 android:background="@color/verde"
+                 android:gravity="center"
+                 android:text="18,5 e 24,99"
+                 android:textColor="@color/colorPrimaryDark" />
 
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/amarelo"
-            android:gravity="center"
-            android:text="25 e 29,99"
-            android:textColor="@color/colorPrimaryDark" />
-
-
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/laranja"
-            android:gravity="center"
-            android:text="30 e 34,99"
-            android:textColor="@color/branco" />
+             <TextView
+                 android:layout_width="62dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="6dp"
+                 android:background="@color/amarelo"
+                 android:gravity="center"
+                 android:text="25 e 29,99"
+                 android:textColor="@color/colorPrimaryDark" />
 
 
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/vermelho"
-            android:gravity="center"
-            android:text="35 e 39,99"
-            android:textColor="@color/branco" />
+             <TextView
+                 android:layout_width="62dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="6dp"
+                 android:background="@color/laranja"
+                 android:gravity="center"
+                 android:text="30 e 34,99"
+                 android:textColor="@color/branco" />
 
 
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:orientation="horizontal"
-        android:layout_marginTop="20px">
-
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="26px"
-            android:background="@color/verde"
-            android:gravity="center"
-            android:text="PESO IDEAL"
-            android:textColor="@color/colorPrimaryDark" />
-
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/amarelo"
-            android:gravity="center"
-            android:text="ACIMA DO PESO"
-            android:textColor="@color/colorPrimaryDark" />
-
-
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/laranja"
-            android:gravity="center"
-            android:text="OBESIDADE 1"
-            android:textColor="@color/branco" />
-
-
-        <TextView
-            android:layout_width="230px"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35px"
-            android:background="@color/vermelho"
-            android:gravity="center"
-            android:text="OBESIDADE 2"
-            android:textColor="@color/branco" />
+             <TextView
+                 android:layout_width="62dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="6dp"
+                 android:background="@color/vermelho"
+                 android:gravity="center"
+                 android:text="35 e 39,99"
+                 android:textColor="@color/branco" />
 
 
 
 
-    </LinearLayout>
+         </LinearLayout>
 
-    <Button
-        android:layout_width="300px"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/colorPrimary"
-        android:onClick="botaoApertado"
-        android:text="Calcular"
-        android:textColor="@color/branco"
-        android:shadowColor="@color/colorAccent"
-        />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="100px"
+             android:orientation="horizontal"
+             android:layout_marginTop="20px">
 
-    <TextView
-        android:id="@+id/text_resposta_id"
-        android:layout_width="match_parent"
-        android:layout_height="60px"
-        android:layout_margin="16px"
-        android:background="@color/azul"
-        android:textColor="@color/branco"/>
+             <TextView
+                 android:layout_width="70dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="8dp"
+                 android:background="@color/verde"
+                 android:gravity="center"
+                 android:text="PESO IDEAL"
+                 android:textColor="@color/colorPrimaryDark" />
 
-</LinearLayout>
+             <TextView
+                 android:layout_width="70dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="6dp"
+                 android:background="@color/amarelo"
+                 android:gravity="center"
+                 android:text="ACIMA DO PESO"
+                 android:textColor="@color/colorPrimaryDark" />
+
+
+             <TextView
+                 android:layout_width="70dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="6dp"
+                 android:background="@color/laranja"
+                 android:gravity="center"
+                 android:text="OBESIDADE 1"
+                 android:textColor="@color/branco" />
+
+
+             <TextView
+                 android:layout_width="230px"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 android:layout_marginLeft="35px"
+                 android:background="@color/vermelho"
+                 android:gravity="center"
+                 android:text="OBESIDADE 2"
+                 android:textColor="@color/branco" />
+
+         </LinearLayout>
+
+         <Button
+             android:layout_width="300px"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:backgroundTint="@color/colorPrimary"
+             android:onClick="botaoApertado"
+             android:text="Calcular"
+             android:textColor="@color/branco"
+             android:shadowColor="@color/colorAccent"
+             />
+
+         <TextView
+             android:id="@+id/text_resposta_id"
+             android:layout_width="match_parent"
+             android:layout_height="60px"
+             android:layout_margin="16px"
+             android:background="@color/azul"
+             android:textColor="@color/branco"/>
+
+     </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.design.widget.CoordinatorLayout>
