@@ -9,14 +9,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/splash">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/toca"
-        android:layout_gravity="top|right"
-        android:layout_marginTop="22dp"
-        android:layout_marginRight="22dp"/>
-
 
     <android.support.v7.widget.CardView
         android:layout_width="285dp"
